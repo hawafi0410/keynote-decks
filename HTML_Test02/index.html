@@ -5,7 +5,7 @@
     <script>
         // Präsentation immer von vorne starten
         try {
-            localStorage.clear();
+            localStorage.removeItem("KnLiveAppState");
             sessionStorage.clear();
         } catch (e) {
             console.log("Konnte LocalStorage nicht leeren:", e);
